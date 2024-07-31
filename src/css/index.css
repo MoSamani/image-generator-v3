@@ -29,7 +29,7 @@ header h2 {
 }
 
 header p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 main {
@@ -68,12 +68,16 @@ main {
 
 .herobox1 {
   width: 50%;
-  height: 620px;
+  height: 580px;
 }
 
 .herobox2 {
   width: 50%;
-  height: 620px;
+  height: 580px;
+  outline: 1px solid #999;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-right: 10px;
 }
 
 .nextbutton {
@@ -82,4 +86,53 @@ main {
   padding: 20px 300px 20px 300px;
   border-radius: 6px;
   font-size: 1rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-gap: 0px;
+}
+
+.inputWrapper {
+  text-align: left;
+}
+
+.inputLabel {
+  margin: 30px 0px 0px 30px;
+  font-size: 1.2rem;
+}
+
+.radioGruop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for radio buttons */
+  gap: 10px; /* Space between radio buttons */
+  align-items: center; /* Center the items vertically */
+
+  text-align: left;
+  outline: 1px solid #999;
+  border-radius: 15px;
+  margin: 10px 20px 0px 20px;
+}
+
+input[type='radio'] {
+  margin: 20px 10px 20px 40px;
+  accent-color: blue;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transform: scale(1.5);
+}
+
+input[type='text'] {
+  padding: 20px 20px 20px 20px;
+  margin: 10px 20px 0px 20px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+}
+
+textarea {
+  padding: 40px 20px 20px 20px;
+  margin: 10px 20px 0px 20px;
+  border-radius: 15px;
+  font-size: 1.1rem;
 }
